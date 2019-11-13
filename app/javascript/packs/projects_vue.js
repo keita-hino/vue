@@ -7,13 +7,11 @@
 
 import Vue from 'vue'
 import Projects from '../components/projects.vue'
-import Header from '../components/header.vue'
 // import router from './routes.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   const app = new Vue({
     render: h => h(Projects)
-    // router
   }).$mount()
   document.body.appendChild(app.$el)
 

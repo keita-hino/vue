@@ -1,7 +1,8 @@
 <template>
   <div id="app">
+    <Header/>
     <!-- <router-view> -->
-      <p>{{ message }}</p><br>
+      <p>{{ titleName }}</p><br>
       <div class='container'>
         <table class='table'>
           <thead>
@@ -63,10 +64,11 @@
 
 <script>
   import axios from 'axios'
+  import Header from '../components/header.vue'
   export default {
     data: function () {
       return {
-        message: 'Hello Vue!',
+        titleName: 'プロジェクト一覧',
         projects: []
       }
     },
@@ -90,6 +92,9 @@
         }
         return value.toString().replace(/(\d)(?=(\d{3})+$)/g, '$1,')
       }
+    },
+    components: {
+      Header
     }
   }
 </script>
