@@ -57,14 +57,14 @@
         </table><br><br>
       </div>
     <!-- </router-view> -->
+    <Footer/>
   </div>
-
-
 </template>
 
 <script>
   import axios from 'axios'
   import Header from '../components/header.vue'
+  import Footer from '../components/footer.vue'
   export default {
     data: function () {
       return {
@@ -94,7 +94,8 @@
       }
     },
     components: {
-      Header
+      Header,
+      Footer
     }
   }
 </script>
