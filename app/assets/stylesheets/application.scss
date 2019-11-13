@@ -14,7 +14,6 @@
 *= require_self
 */
 
-
 $color-base : #464646;
 
 //  ヘッダー
@@ -106,6 +105,29 @@ $color-base : #464646;
   align-items: center;
 }
 
+// // ソート関連
+// .icon_arrow-car-down {
+//   display: inline-block;
+//   height: 12px;
+//   width: 13px;
+//   margin-left: 5px;
+//   background: image_url("icon_arrow-car-up-disable.svg") center center no-repeat;
+//   cursor: pointer;
+// }
+
+// .sort_header {
+//   color: #000000;
+// }
+
+// .icon_arrow-car-up {
+//   display: inline-block;
+//   height: 8px;
+//   width: 10px;
+//   margin-left: 8px;
+//   background: image-url('icon_arrow-carlist.svg') center center no-repeat;
+//   cursor: pointer;
+// }
+// // ここまで（ソート関連）
 
 .clearfix:after {
   content: "";         /* 擬似要素を実体化 */
@@ -151,4 +173,198 @@ $color-base : #464646;
   color: #fff;
   background-color: #d65b45;
   border-color: #a94534;
+}
+
+
+
+$gray-medium-light: #eaeaea;
+
+@mixin box_sizing{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:         border-box;
+}
+
+
+.search{
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-right: 100px;
+}
+
+.clear{
+  margin-top: 20px;
+}
+
+.search-form{
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.flame {
+    position: relative;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-bottom: 25px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: solid 3px #CCCCCC;
+}
+.flame .flame-title {
+    position: absolute;
+    display: inline-block;
+    top: -27px;
+    left: -3px;
+    padding: 0 9px;
+    height: 25px;
+    line-height: 25px;
+    vertical-align: middle;
+    font-size: 17px;
+    background: #CCCCCC;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px 5px 0 0;
+}
+
+.range{
+  padding-left: 5px;
+  font-size: 15px;
+}
+
+ .item {
+    float: left;
+  }
+
+ section {
+   overflow: auto;
+ }
+
+ textarea {
+   resize: vertical;
+ }
+ #logo {
+   float: left;
+   margin-right: 10px;
+   font-size: 1.7em;
+   color: white;
+   text-transform: uppercase;
+   letter-spacing: -1px;
+   font-weight: bold;
+   &:hover {
+     color: white;
+     text-decoration: none;
+   }
+ }
+
+ .center {
+   text-align: center;
+   h1 {
+     padding-top: 10px;
+     margin-bottom: 10px;
+   }
+ }
+
+
+ /* typography */
+
+ h1, h2, h3, h4, h5, h6 {
+   line-height: 1;
+ }
+
+ h1 {
+   padding-top: 10px;
+   font-size: 3em;
+   letter-spacing: -2px;
+   margin-bottom: 30px;
+   text-align: center;
+ }
+
+//  h2 {
+//    font-size: 1.2em;
+//    letter-spacing: -1px;
+//    margin-bottom: 30px;
+//    text-align: center;
+//    font-weight: normal;
+//    color: $gray-light;
+//  }
+
+ p {
+   font-size: 1.1em;
+   line-height: 1.7em;
+ }
+
+ /* forms */
+
+ textarea, select, .form_element, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  margin-bottom: 15px;
+  @include box_sizing;
+}
+
+input {
+  height: auto !important;
+}
+
+.form_button {
+    width:100px;
+}
+
+#error_explanation {
+  color: red;
+  ul {
+    color: red;
+    margin: 0 0 30px 0;
+  }
+}
+.checkbox {
+  margin-top: -10px;
+  margin-bottom: 10px;
+  span {
+    margin-left: 20px;
+    font-weight: normal;
+  }
+}
+
+#session_remember_me {
+  width: auto;
+  margin-left: 0;
+}
+
+// .field_with_errors {
+//   @extend .has-error;
+//   .form-control {
+//     color: $state-danger-text;
+//   }
+// }
+
+.required:after {
+    content: " *";
+    color: #E00;
+}
+
+.pagination{
+  margin: 13px 0;
+}
+
+.project_info {
+  font-size: 0.9em;
+  margin-bottom: 5px;
+  color: #ff0000;
+}
+
+/* project-detail */
+
+.project-detail-row {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.project-detail-heading-bg {
+  background-color: #cacaca;
+  padding: 5px 0 5px 20px;
+}
+
+a.border-radius-none {
+  border-radius: 0px ;
 }

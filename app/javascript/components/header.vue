@@ -2,17 +2,12 @@
   <!-- 背景黒 -->
   <header class='navbar navbar-dark bg-dark'>
     <div class='container'>
-      <span class='color_white'>ヘッダー</span>
+      <span id='logo'>プロジェクト管理システム</span>
+      <nav>
+        <ul class='nav navbar-nav navbar-right'>
+          <li><span class='current-user'>社員A</span></li>
+        </ul>
+      </nav>
     </div>
   </header>
 </template>
-
-<style>
-  .dropdown-toggle{
-      background-color: #222 !important;
-      color: #9d9d9d !important;
-  }
-  .color_white {
-    color: #FFFFFF;
-}
-</style>

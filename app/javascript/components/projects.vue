@@ -2,7 +2,7 @@
   <div id="app">
     <Header/>
     <!-- <router-view> -->
-      <p>{{ titleName }}</p><br>
+      <h1>{{ titleName }}</h1><br>
       <div class='container'>
         <table class='table'>
           <thead>
