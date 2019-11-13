@@ -3,8 +3,11 @@ module Api
     class ProjectsController < ApplicationController
 
       def index
-        projects = Project.all
-        render json: { status: 'SUCCESS', message: 'Loaded posts', projects: projects }
+        @projects = Project.all
+        respond_to do |format|
+          format.json { render 'index.json.jbuilder' }
+        end
+
       end
 
     end
