@@ -6,7 +6,8 @@
 // All it does is render <div>Hello Vue</div> at the bottom of the page.
 
 import Vue from 'vue'
-import Projects from '../projects.vue'
+import Projects from '../components/projects.vue'
+import Header from '../components/header.vue'
 // import router from './routes.js';
 
 document.addEventListener('DOMContentLoaded', () => {
