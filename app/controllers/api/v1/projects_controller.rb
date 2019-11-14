@@ -1,7 +1,7 @@
 module Api
   module V1
     class ProjectsController < ApplicationController
-      before_action :set_project, only: [:edit, :update]
+      before_action :set_project, only: [:edit, :update, :destroy]
       def index
         @projects = Project.order(created_at: "DESC")
         respond_to do |format|
@@ -23,6 +23,10 @@ module Api
       def update
         @project.assign_attributes(project_params)
         @project.save
+      end
+
+      def destroy
+        @project.destroy
       end
 
       private
