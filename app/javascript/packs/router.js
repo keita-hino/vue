@@ -10,4 +10,4 @@ const routes = [
   {path: 'projects/new', component: ProjectForm, name: ProjectForm}
   ];
 
-// export default new VueRouter({ routes });
+export default new VueRouter({ routes });
