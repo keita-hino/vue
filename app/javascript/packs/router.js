@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router';
-import Projects from './components/projects.vue'
-import ProjectCreate from './components/project_create.vue'
-import ProjectUpdate from './components/project_update.vue'
+import Projects from '../components/projects.vue'
+import ProjectCreate from '../components/project_create.vue'
+import ProjectUpdate from '../components/project_update.vue'
 
 Vue.use(VueRouter);
 
@@ -12,4 +12,4 @@ const routes = [
   {path: '/projects/:id/edit',component: ProjectUpdate,name: 'ProjectUpdate'}
 ];
 
-// export default new VueRouter({ routes });
+export default new VueRouter({ routes });
