@@ -8,7 +8,7 @@ Vue.use(VueRouter);
 
 const routes = [
   {path: '/', component: Projects, name: Projects},
-  {path: 'projects/new', component: ProjectCreate, name: ProjectCreate},
+  {path: '/projects/new', component: ProjectCreate, name: ProjectCreate},
   {path: '/projects/:id/edit',component: ProjectUpdate,name: 'ProjectUpdate'}
 ];
 
