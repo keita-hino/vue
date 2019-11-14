@@ -49,7 +49,9 @@
                 <th>{{ project.working_group }}</th>
                 <th>{{ project.start_date }}</th>
                 <th>{{ project.end_date }}</th>
-                <!-- <th><router-link to="projects/new">編集</router-link></th> -->
+
+                <th><router-link :to="{name: 'ProjectUpdate', params: {id:40}}" class="btn btn-info">編集</router-link></th>
+                <!-- <th><router-link to="projects/:id/edit" params="{id:1}">編集</router-link></th> -->
               </tr>
           </tbody>
         </table><br><br>
