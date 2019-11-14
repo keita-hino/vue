@@ -1,4 +1,5 @@
 json.projects @projects do |project|
+  json.id project.id
   json.project_name project.project_name
   json.sales_amount project.sales_amount
   json.working_group project.working_group_i18n

@@ -1,7 +1,7 @@
 module Api
   module V1
     class ProjectsController < ApplicationController
-      before_action :set_project, only: [:edit]
+      before_action :set_project, only: [:edit, :update]
       def index
         @projects = Project.order(created_at: "DESC")
         respond_to do |format|
@@ -10,13 +10,19 @@ module Api
       end
 
       def edit
-        debugger
+        respond_to do |format|
+          format.json { render 'edit.json.jbuilder' }
+        end
       end
 
       def create
         project = Project.new(project_params)
         project.save!
-        # head :success
+      end
+
+      def update
+        @project.assign_attributes(project_params)
+        @project.save
       end
 
       private
