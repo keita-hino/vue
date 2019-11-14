@@ -6,6 +6,8 @@
       <nav>
         <ul class='nav navbar-nav navbar-right'>
           <li><span class='current-user'>社員A</span></li>
+          <li><router-link to="/">プロジェクト一覧</router-link></li>
+          <li><router-link to="/projects/new">プロジェクト登録</router-link></li>
         </ul>
       </nav>
     </div>

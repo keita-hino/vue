@@ -1,9 +1,7 @@
 <template>
   <div id="app">
-    <Header/>
     <!-- <router-view> -->
       <h1>{{ titleName }}</h1><br>
-      <div class='container'>
         <table class='table'>
           <thead>
             <tr>
@@ -57,14 +55,10 @@
         </table><br><br>
       </div>
     <!-- </router-view> -->
-    <Footer/>
-  </div>
 </template>
 
 <script>
   import axios from 'axios'
-  import Header from '../components/header.vue'
-  import Footer from '../components/footer.vue'
   export default {
     data: function () {
       return {
@@ -92,10 +86,6 @@
         }
         return value.toString().replace(/(\d)(?=(\d{3})+$)/g, '$1,')
       }
-    },
-    components: {
-      Header,
-      Footer
     }
   }
 </script>

@@ -6,8 +6,8 @@ import ProjectForm from '../components/project_form.vue'
 Vue.use(VueRouter);
 
 const routes = [
-  {path: '/', component: Projects},
-  {path: 'projects/new', component: ProjectForm}
+  {path: '/', component: Projects, name: Projects},
+  {path: 'projects/new', component: ProjectForm, name: ProjectForm}
   ];
 
-export default new VueRouter({ routes });
+// export default new VueRouter({ routes });
