@@ -24,7 +24,7 @@
                 <label>終了日</label>
                 <input v-model="project.end_date" type="date" class="form_control form_element">
               </div>
-              <button type="submit" class="form_control btn btn-default form_button">戻る</button>
+              <router-link to="/" active-class='form_control btn btn-default form_button'>戻る</router-link>
               <button type="submit" class="form_control btn btn-success form_button pull-right">登録</button>
             </form>
     <!-- </router-view> -->
