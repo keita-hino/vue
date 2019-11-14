@@ -34,8 +34,6 @@
 <script>
   import axios from 'axios'
   import { csrfToken } from 'rails-ujs'
-  // csrfトークンはrails-ujsがpugを使うか要検討
-  // const token = document.getElementByName('csrf-token')[0].getAttribute('content')
   axios.defaults.headers.common['X-CSRF-Token'] = csrfToken()
 
   export default {
