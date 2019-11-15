@@ -68,7 +68,6 @@
     },
     methods: {
       setProjects: function(){
-        alert(this.$i18n.tc('message.hello'))
         axios.get('api/v1/projects.json')
           .then(response => {
             for(var i = 0; i < response.data.projects.length; i++) {

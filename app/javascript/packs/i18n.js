@@ -9,7 +9,12 @@ const messages = {
   },
   ja: {
     message: {
-      hello: 'こんにちは、世界'
+      working_groups: {
+        develop: '開発',
+        design: 'デザイン',
+        marketing: 'マーケティング',
+        sales: '営業'
+      }
     }
   }
 }
