@@ -4,18 +4,12 @@ module Api
       before_action :set_project, only: [:edit, :update, :destroy]
       def index
         @projects = Project.order(created_at: "DESC")
-        respond_to do |format|
-          format.json { render 'index.json.jbuilder' }
-        end
       end
 
       def show
       end
 
       def edit
-        respond_to do |format|
-          format.json { render 'edit.json.jbuilder' }
-        end
       end
 
       def create
