@@ -9,6 +9,9 @@ module Api
         end
       end
 
+      def show
+      end
+
       def edit
         respond_to do |format|
           format.json { render 'edit.json.jbuilder' }
@@ -16,13 +19,21 @@ module Api
       end
 
       def create
-        project = Project.new(project_params)
-        project.save!
+        @project = Project.new(project_params)
+        if @project.save
+          render json: @project, status: :success
+        else
+          render json: { errors: @project.errors.full_messages, render: 'edit.json.jbuilder' }, status: :unprocessable_entity
+        end
       end
 
       def update
         @project.assign_attributes(project_params)
-        @project.save
+        if @project.save
+          render json: @project, status: :success
+        else
+          render json: { errors: @project.errors.full_messages, render: 'edit.json.jbuilder' }, status: :unprocessable_entity
+        end
       end
 
       def destroy
