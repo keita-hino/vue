@@ -21,7 +21,7 @@ module Api
       def create
         @project = Project.new(project_params)
         if @project.save
-          render json: @project, status: :success
+          render json: @project, status: :ok
         else
           render json: { errors: @project.errors.full_messages, render: 'edit.json.jbuilder' }, status: :unprocessable_entity
         end
@@ -30,7 +30,7 @@ module Api
       def update
         @project.assign_attributes(project_params)
         if @project.save
-          render json: @project, status: :success
+          render json: @project, status: :ok
         else
           render json: { errors: @project.errors.full_messages, render: 'edit.json.jbuilder' }, status: :unprocessable_entity
         end
