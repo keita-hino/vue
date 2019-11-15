@@ -43,7 +43,7 @@
             </tr>
           </thead>
           <tbody>
-              <tr v-for="(project) in projects" :key="project.id">
+              <tr v-for="project in projects" :key="project.id">
                 <th>{{ project.project_name }}</th>
                 <th>{{ project.sales_amount | numberWithDelimiter }}</th>
                 <th>{{ project.working_group }}</th>
