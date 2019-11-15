@@ -1,8 +1,8 @@
 class Project < ApplicationRecord
-  validates :project_name,
+  validates :start_date,
     presence: true
 
-  validates :sales_amount,
+  validates :end_date,
     presence: true
 
   # 担当部署
