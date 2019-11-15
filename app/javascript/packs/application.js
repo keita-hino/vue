@@ -11,12 +11,14 @@ require("channels")
 import Vue from 'vue'
 import App from '../app.vue'
 import router from './router'
+import { i18n } from './i18n'
 
 document.addEventListener('DOMContentLoaded', () => {
   const el = document.body.appendChild(document.createElement('app'))
   const app = new Vue({
     router,
     el,
+    i18n,
     render: h => h(App)
   })
 
