@@ -20,6 +20,13 @@
 /public/assets
 .byebug_history
 
+# 家用
+/Gemfile
+/Gemfile.lock
+/db/schema.rb
+/config/database.yml
+/package-lock.json
+
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 
@@ -29,3 +36,4 @@
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+
